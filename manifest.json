@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "InstaPhotoSave",
+    "version": "0.1",
+    "description": "Extensão para Download de Fotos do Instagram A InstaPhotoSave é uma extensão para os navegadores Edge e Chrome que permite fazer download de fotos do Instagram com facilidade. Com um simples clique, você pode baixar suas fotos favoritas do Instagram diretamente para o seu computador.",
+    "icons": {
+        "48": "assets/icons/icon48.png",
+        "128": "assets/icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "js":[
+                "src/components/button-download.js",
+                "src/main.js"
+            ],
+            "matches": [
+                "https://www.instagram.com/*"
+            ]
+        }
+    ]
+
+}
