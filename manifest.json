@@ -11,6 +11,7 @@
         {
             "js":[
                 "src/components/button-download.js",
+                "src/services/dowanload-image.js",
                 "src/main.js"
             ],
             "matches": [

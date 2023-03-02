@@ -9,3 +9,8 @@ function adicionarBotaoUI(){
 }
  
 adicionarBotaoUI();
+
+button_download.addEventListener('click', () => {
+    var link_image = document.getElementsByClassName('_aagu _aato')[0].firstChild.firstChild.src;
+    download_image(link_image, 'instagramImage.png')
+});
